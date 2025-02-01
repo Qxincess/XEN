@@ -20,7 +20,7 @@ const css = `
   background-size: cover !important;
   }
 
-.css-1udp1s3, .css-zslu1c, ._1RMYS, .css-x84yyj, .css-b0qydj , ._1q4mD ._1sUGu ._1u05O, .css-1rbdj9p, ._3TORb, ._3i_24, .css-1n00yj3, #root-page-mobile #content #content-container #main-content, .css-1clyn5x, #root-page-mobile #content #content-container {
+.css-1udp1s3, .css-zslu1c, ._1RMYS, ._1Yt8Y, .css-x84yyj, .css-b0qydj , ._1q4mD ._1sUGu ._1u05O, .css-1rbdj9p, ._3TORb, ._3i_24, .css-1n00yj3, #root-page-mobile #content #content-container #main-content, .css-1clyn5x, #root-page-mobile #content #content-container {
    background-color : transparent !important;
    backdrop-filter: blur(5px);
 }
