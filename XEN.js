@@ -94,12 +94,28 @@ style.innerHTML = css;
 
 document.head.appendChild(style);
 
-(function() {
-    window.onload = function() {
-        let logo = document.querySelector('img[alt="KoGaMa"]');
+(function () {
+    const gifURL = "https://art.pixilart.com/44e1d381b27773e.gif"; /*NAVIGATION BAR ICON*/
 
+    function replaceLogo() {
+        const logo = document.querySelector('img[alt="KoGaMa"]');
         if (logo) {
-            logo.src = "https://art.pixilart.com/44e1d381b27773e.gif"; /*NAVIGATION BAR ICON*/
+            // Remove the 'srcset' attribute
+            logo.removeAttribute('srcset');
+            logo.src = gifURL;
         }
-    };
+    }
+
+    window.onload = replaceLogo;
+
+    const observer = new MutationObserver(() => {
+        replaceLogo();
+    });
+
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true,
+    });
+
+    window.addEventListener("resize", replaceLogo);
 })();
